@@ -1,0 +1,19 @@
+/* 1) Base global: fonte e cor no body, herdadas pelos filhos */
+body {
+  font-family: Arial;
+  color: #333;
+  font-size: 16px;
+}
+
+/* 2) Seletores */
+.destaque { color: blue; }    /* classe: reutilizável */
+#topo     { color: navy; }    /* ID: único na página */
+
+/* 3) Conflito de especificidade (tag, classe e ID) */
+p        { color: gray; }
+.destaque { color: blue; }
+#teste   { color: navy; }
+
+/* 4) Empate: mesma especificidade, vale a última */
+p.empate { color: gray; }
+p.empate { color: green; }

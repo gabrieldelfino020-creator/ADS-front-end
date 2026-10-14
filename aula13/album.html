@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Álbum Horizonte</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Álbum Horizonte</h1>
+
+  <!-- 01 Capa adaptável -->
+  <picture>
+    <source media="(max-width: 600px)" srcset="capa-vertical.jpg">
+    <img src="capa-1200.jpg"
+         srcset="capa-480.jpg 480w, capa-1200.jpg 1200w"
+         sizes="(max-width: 600px) 100vw, 50vw"
+         alt="Capa do álbum: sol laranja sobre o mar"
+         width="1200" height="800">
+  </picture>
+
+  <!-- 02 Faixa e clipe -->
+  <h2>Faixa</h2>
+  <audio controls>
+    <source src="faixa.mp3" type="audio/mpeg">
+    <source src="faixa.ogg" type="audio/ogg">
+    <p>Seu navegador não suporta áudio. <a href="faixa.mp3">Baixe a faixa</a>.</p>
+  </audio>
+
+  <h2>Clipe</h2>
+  <video controls poster="clipe.jpg" width="640" height="360">
+    <source src="clipe.mp4" type="video/mp4">
+    <track src="legendas.vtt" kind="captions" srclang="pt-BR" label="Português" default>
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <!-- 03 Lista de faixas -->
+  <h2>Lista de faixas</h2>
+  <div class="tabela-rolavel">
+    <table>
+      <caption>Faixas do álbum</caption>
+      <thead>
+        <tr>
+          <th scope="col">Faixa</th>
+          <th scope="col">Duração</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Abertura</th><td>3:00</td></tr>
+        <tr><th scope="row">Horizonte</th><td>4:00</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><th scope="row">Total</th><td>7:00</td></tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>

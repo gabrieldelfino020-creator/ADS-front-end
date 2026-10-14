@@ -1,0 +1,19 @@
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.tabela-rolavel {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
